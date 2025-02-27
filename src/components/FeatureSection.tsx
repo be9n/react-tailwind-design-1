@@ -8,7 +8,7 @@ export default function FeatureSection() {
         <span className="block w-fit mx-auto uppercase text-primary p-2 rounded-full bg-secondary text-sm mb-5">
           Feature
         </span>
-        <div className="text-white text-6xl tracking-wide">
+        <div className="text-white text-3xl md:text-4xl lg:text-6xl tracking-wide capitalize">
           Easily build <GradientSpan>your code</GradientSpan>
         </div>
       </div>
