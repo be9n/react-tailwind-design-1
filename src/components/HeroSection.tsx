@@ -32,7 +32,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="my-[80px] flex gap-10">
+      <div className="my-[80px] flex gap-10 flex-shrink-0">
         {videos.map((video) => (
           <div
             key={video.id}

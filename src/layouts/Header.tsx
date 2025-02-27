@@ -1,7 +1,35 @@
 import { useEffect, useState } from "react";
-import { navItems } from "../constants/index";
 import { Button } from "../components/Button";
 import { Menu } from "lucide-react";
+
+type navItemType = {
+  id: number;
+  title: string;
+  link: string;
+};
+
+const navItems: navItemType[] = [
+  {
+    id: 1,
+    title: "Features",
+    link: "/",
+  },
+  {
+    id: 2,
+    title: "Workflow",
+    link: "/",
+  },
+  {
+    id: 3,
+    title: "Pricing",
+    link: "/",
+  },
+  {
+    id: 4,
+    title: "Testimonials",
+    link: "/",
+  },
+];
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
