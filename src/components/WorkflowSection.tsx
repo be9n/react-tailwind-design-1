@@ -43,11 +43,11 @@ export default function WorkflowSection() {
 
   return (
     <div className="container my-32 pt-20 border-t border-neutral-800">
-      <div data-aos="zoom-in" className="text-center text-white text-3xl md:text-4xl lg:text-6xl pb-16">
+      <h1 data-aos="fade-bottom" className="text-center text-white text-3xl md:text-4xl lg:text-6xl pb-16 leading-[1.6]">
         Accelerate your <GradientSpan>coding workflow.</GradientSpan>
-      </div>
-      <div className="flex gap-8">
-        <div data-aos="fade-right" data-aos-delay="300" className="flex-1">
+      </h1>
+      <div className="flex flex-col lg:flex-row gap-8">
+        <div data-aos="fade-right" data-aos-delay="300" className="flex-1 max-w-full">
           <img
             src="/src/assets/code.jpg"
             className="w-full h-full object-contain"

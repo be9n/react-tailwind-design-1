@@ -22,9 +22,9 @@ export default function HeroSection() {
   return (
     <div className="container text-center mt-40 text-white px-6 tracking-wide">
       <div className="max-w-5xl mx-auto">
-        <div data-aos="fade-right" className="text-4xl sm:text-6xl lg:text-7xl mb-10 capitalize">
+        <h1 data-aos="fade-right" className="text-4xl sm:text-6xl lg:text-7xl mb-10 capitalize tracking-wide leading-[1.6]">
           Virtual build tools <GradientSpan>for developers</GradientSpan>
-        </div>
+        </h1>
         <p data-aos="fade-left" data-aos-delay="500" className="text-lg text-neutral-500 w-[850px] max-w-full mx-auto">
           Empower your creativity and bring your VR app ideas to life with our
           intuitive development tools. Get started today and turn your
@@ -38,7 +38,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div data-aos="fade-bottom" className="my-[80px] flex gap-10 flex-shrink-0">
+      <div data-aos="fade-up" className="my-[80px] flex gap-10 flex-shrink-0">
         {videos.map((video) => (
           <div
             key={video.id}

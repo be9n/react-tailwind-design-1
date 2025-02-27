@@ -70,7 +70,7 @@ export default function Header() {
           <ul className="hidden lg:flex items-center gap-12">
             {navItems.map((navItem) => (
               <li key={navItem.id} className="text-[15px] font-normal">
-                <a href={navItem.link}>{navItem.title}</a>
+                <a href={navItem.link} className="text-neutral-300 hover:text-white transition-colors duration-300">{navItem.title}</a>
               </li>
             ))}
           </ul>

@@ -66,9 +66,9 @@ export default function FeatureSection() {
         <span className="block w-fit mx-auto uppercase text-primary p-2 rounded-full bg-secondary text-sm mb-5">
           Feature
         </span>
-        <div className="text-white text-3xl md:text-4xl lg:text-6xl tracking-wide capitalize">
+        <h1 className="text-white text-3xl md:text-4xl lg:text-6xl capitalize tracking-wide leading-[1.6]">
           Easily build <GradientSpan>your code</GradientSpan>
-        </div>
+        </h1>
       </div>
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {features.map((feature) => (
