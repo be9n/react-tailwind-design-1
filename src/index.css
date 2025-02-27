@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", Arial;
+  background-color: #121212;
+}
+
+h1 {
+  @apply text-3xl;
+}
