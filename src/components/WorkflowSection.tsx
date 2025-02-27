@@ -1,5 +1,7 @@
 import { CircleCheck } from "lucide-react";
 import GradientSpan from "./GradientSpan";
+import { useEffect } from "react";
+import Aos from "aos";
 
 type WorkflowStepType = {
   id: number;
@@ -35,20 +37,24 @@ const workflowSteps: WorkflowStepType[] = [
 ];
 
 export default function WorkflowSection() {
+  useEffect(() => {
+    Aos.init({ duration: 800, once: true });
+  }, []);
+
   return (
     <div className="container my-32 pt-20 border-t border-neutral-800">
-      <div className="text-center text-white text-3xl md:text-4xl lg:text-6xl pb-16">
+      <div data-aos="zoom-in" className="text-center text-white text-3xl md:text-4xl lg:text-6xl pb-16">
         Accelerate your <GradientSpan>coding workflow.</GradientSpan>
       </div>
       <div className="flex gap-8">
-        <div className="flex-1">
+        <div data-aos="fade-right" data-aos-delay="300" className="flex-1">
           <img
             src="/src/assets/code.jpg"
             className="w-full h-full object-contain"
             alt=""
           />
         </div>
-        <div className="flex-1 pt-10 space-y-11">
+        <div data-aos="fade-left" data-aos-delay="300" className="flex-1 pt-10 space-y-11">
           {workflowSteps.map((step) => (
             <div key={step.id} className="flex gap-6 items-start ">
               <div className="p-2 bg-secondary rounded-full">

@@ -6,8 +6,9 @@ import {
   PlugZap,
   ShieldHalf,
 } from "lucide-react";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import GradientSpan from "./GradientSpan";
+import Aos from "aos";
 
 type FeatureType = {
   icon: ReactNode;
@@ -55,8 +56,12 @@ export const features: FeatureType[] = [
 ];
 
 export default function FeatureSection() {
+  useEffect(() => {
+    Aos.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <section className="container my-20">
+    <section data-aos="fade-up" className="container my-20 overflow-hidden">
       <div className="text-center mb-12">
         <span className="block w-fit mx-auto uppercase text-primary p-2 rounded-full bg-secondary text-sm mb-5">
           Feature
