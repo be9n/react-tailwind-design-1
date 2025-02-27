@@ -12,13 +12,13 @@ export default {
       },
       container: {
         center: true,
-        padding: "1rem", // Add padding like Bootstrap's container
+        padding: "2rem",
         screens: {
           sm: "540px",
           md: "720px",
           lg: "960px",
           xl: "1140px",
-          "2xl": "1320px", // This matches Bootstrap's 'xxl' container
+          "2xl": "1320px",
         },
       },
       colors: {
