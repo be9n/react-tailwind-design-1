@@ -1,4 +1,3 @@
-import { div, span } from "framer-motion/client";
 import GradientSpan from "./GradientSpan";
 import { CircleCheck } from "lucide-react";
 import { Button } from "./Button";
